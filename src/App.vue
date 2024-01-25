@@ -15,8 +15,30 @@ import { ref } from "vue" // you need this to use ref()
 <!-- the template is where the html code goes -->
 <template>
 <div id="navbar" class="container">  
-        <div id="title">Luis's website</div>
+        <div id="title">Vue website</div>
         
+
+
+
+        <div id="top-bar">
+    <div id="title-container">
+      <img class="logo-image" alt="Iaac logo" src="./assets/iaac-white.png" />
+      <h2>Digital Tools for Cloud-based Data Management</h2>
+    </div>
+  </div>
+
+  <div id="content">
+    <!-- First example - button -->
+    <!-- Here we define what function will be called when button is clicked. -->
+    <button @click="increment">Add one more</button>
+
+    <!-- Now we print the value. The syntax to print variable is {{ variable_name }}. -->
+    <p style="margin-left: 8px">Count is: {{ count }}</p>
+
+  </div>
+
+  
+
 
         <!--
         <div id="logo">
